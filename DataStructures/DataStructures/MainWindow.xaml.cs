@@ -41,6 +41,18 @@ namespace DataStructures
 
             bool isForBrunch = biscuit.SuitableForBrunch();
             MessageBox.Show(isForBrunch.ToString());
+
+            Dictionary<string, Biscuit> biscuits = new Dictionary<string, Biscuit>();
+            biscuits.Add("vovo", new Biscuit("Arnotts", true));
+            biscuits.Add("timtam", new Biscuit("Arnotts", true));
+            biscuits.Add("rtiz", new Biscuit("Arnotts", false));
+            biscuits.Add("ripoff", new Biscuit("Aldi", true));
+
+            string s = string.Empty;
+            foreach (var item in biscuits)
+            {
+                
+            }
         }
     }
 }
